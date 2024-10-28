@@ -64,7 +64,7 @@ export default function Weather() {
       {weatherData && (
         
 
-        <div className='w-[90%] h-95vh flex flex-col justify-start items-center gap-4'>
+        <div className='w-[90%] h-95vh flex flex-col justify-start items-center gap-10'>
           <div className='w-[95%] h-[20vh] rounded-lg flex flex-col justify-between items-start gap-10 border px-2'>
             <h2 className='text-6xl font-bold'>Weather for {location}</h2>
 
@@ -119,7 +119,11 @@ export default function Weather() {
             </div>
           </div>
 
-          <p></p>
+          <div className='flex flex-col justify-center items-center'>
+            <p className='text-lg italic'>Sorry if the data is incorrect, free API it is!</p>
+            <p>Shoutout to <a href="https://app.tomorrow.io/home" className='text-blue-400'>Tomorrow.io</a></p>
+          </div>
+          
           
         </div>
       )}
